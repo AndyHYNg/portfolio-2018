@@ -446,6 +446,9 @@ img {
   -o-transition-delay: 1100ms;
   transition-delay: 1100ms; }
 
+#about p {
+  line-height: 1.6; }
+
 #about img {
   -webkit-clip-path: polygon(15% 0, 85% 0, 85% 60%, 100% 60%, 100% 100%, 0 100%, 0 15%, 15% 15%);
   clip-path: polygon(15% 0, 85% 0, 85% 60%, 100% 60%, 100% 100%, 0 100%, 0 15%, 15% 15%); }
@@ -479,3 +482,23 @@ img {
     #skills ul li img {
       width: 60px;
       height: 60px; }
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.contact-email {
+  width: 100%;
+  border: 1px solid #bfbfbf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.contact-form {
+  width: 100%; }
