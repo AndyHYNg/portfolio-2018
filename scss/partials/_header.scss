@@ -1,0 +1,43 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header span {
+
+    display: inline-block;
+      position: relative;
+      margin-right: 5px;
+      &:after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 0;
+        top: 0;
+        left: 0;
+        transition: 0.6s;
+        z-index: -5;
+      }
+}
+
+@for $i from 1 through 10 {
+  .flip:hover > h1 > span:nth-child(#{$i}):after,
+  .flip:focus > h1 > span:nth-child(#{$i}):after {
+    $first-delay: 100 * $i;
+    $random: ($i * 9) - 30;
+    background: $main-color;
+    width: 100%;
+    transition: 0.6s;
+    transition-delay: $first-delay + ms;
+    transform: rotate($random + deg);
+  }
+  .flip:hover> h1 > span:nth-child(#{$i}),
+  .flip:focus> h1 > span:nth-child(#{$i})
+  {
+    $second-delay: 110 * $i;
+    color: $background-color;
+    transition-delay: $second-delay + ms;
+  }
+}

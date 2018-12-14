@@ -1,0 +1,33 @@
+#skills {
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        li {
+            width: calc(100% /3);
+            font-size: $skills-logo-size;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                margin: 20px 0;
+            }
+
+            i {
+                color: $main-color;
+            }
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    } 
+}
