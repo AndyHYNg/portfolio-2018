@@ -12,14 +12,19 @@
         align-items: center;
         margin-bottom: 10px;
 
-        p {
-            margin: 0;
+        address {
+            font-size: $paragraph-font-size;
+            font-family: $main-font;
+            margin: 0 0 30px 0;
+            font-style: normal;
+
+            a {
+                text-decoration: none;
+                color: $main-color;
+            }
+
         }
     }
-
-    // h4 {
-    //     margin: 10px auto;  
-    // }
 
     &-form {
         width: 100%;
@@ -30,10 +35,9 @@
             background: $background-color;
             color: $main-color;
             margin-bottom: 10px;
-            padding: 10px 10px;
+            padding: 10px;
             font-family: $main-font;
             font-size: $paragraph-font-size;
-            text-transform: uppercase;
         }
 
         input[type=submit]:hover {
@@ -50,6 +54,9 @@
             border: 1px solid $main-color;
             font-family: $main-font;
             font-size: $paragraph-font-size;
+            padding: 10px;
+            vertical-align: top;
+            color: $main-color;
 
             &::placeholder {
                 color: $main-color;

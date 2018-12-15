@@ -54,6 +54,14 @@ h4 {
     color: $main-color;
 }
 
+h5 {
+    font-family: $main-font;
+    font-size: $h5-heading-font-size;
+    text-transform: uppercase;
+    color: $main-color;
+    margin: 30px 0 10px;
+}
+
 p {
     font-family: $sub-font;
     color: $main-color;

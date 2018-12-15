@@ -83,27 +83,33 @@
       <h2>Contact</h2>
       <div class="contact-container">
         <div class="contact-email">
-          <h4>E-mail</h4>
-          <p>andy.hy.ng@gmail.com</p>
+          <h5>E-mail</h5>
+          <address><a href="mailto:andy.hy.ng@gmail.com">andy.hy.ng@gmail.com</a></address>
         </div>
-        <form class="contact-form">
-          <input type="text" name="name" required placeholder="Name" />
+        <form class="contact-form" action="https://formspree.io/andy.hy.ng@gmail.com" method="POST" />
+        <label for="name" class="visuallyhidden">Name</label>
+          <input id="name" type="text" name="name" required placeholder="NAME" />
+          <label for="email" class="visuallyhidden">Email</label>
           <input
+          id="email"
             type="email"
+            name="email"
             type="emailAddress"
             required
-            placeholder="Email"
+            placeholder="EMAIL"
           />
+          <label for="message" class="visuallyhidden">Message</label>
           <textarea
+            id="message"
             name="message"
             type="text"
             required
             cols="40"
             rows="5"
-            placeholder="Message"
-          >
-          </textarea>
-          <input type="submit" value="Send" />
+            placeholder="MESSAGE"
+            autocomplete="off"
+          ></textarea>
+          <input type="submit" value="SEND" />
         </form>
       </div>
     </section>
