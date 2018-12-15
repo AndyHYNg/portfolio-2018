@@ -1,0 +1,17 @@
+.project-container {
+    margin-bottom: 30px;
+
+    &-text {
+        padding: 10px;
+        background: $project-text-background;
+        color: $main-color;
+
+        &:hover {
+            background: $project-highlight-background;
+            
+            p, h3 {
+                color: $background-color;
+            }
+        }
+    }
+}

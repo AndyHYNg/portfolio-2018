@@ -460,6 +460,17 @@ img {
   -webkit-clip-path: polygon(15% 0, 85% 0, 85% 60%, 100% 60%, 100% 100%, 0 100%, 0 15%, 15% 15%);
   clip-path: polygon(15% 0, 85% 0, 85% 60%, 100% 60%, 100% 100%, 0 100%, 0 15%, 15% 15%); }
 
+.project-container {
+  margin-bottom: 30px; }
+  .project-container-text {
+    padding: 10px;
+    background: #878787;
+    color: #bfbfbf; }
+    .project-container-text:hover {
+      background: #fcce61; }
+      .project-container-text:hover p, .project-container-text:hover h3 {
+        color: #383838; }
+
 #skills ul {
   list-style-type: none;
   margin: 0;
