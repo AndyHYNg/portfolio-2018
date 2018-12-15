@@ -8,11 +8,52 @@
         width: 100%;
         border: 1px solid $main-color;
         display: flex;
-        // justify-content: center;
+        flex-direction: column;
         align-items: center;
+        margin-bottom: 10px;
+
+        p {
+            margin: 0;
+        }
     }
+
+    // h4 {
+    //     margin: 10px auto;  
+    // }
 
     &-form {
         width: 100%;
+        
+        input {
+            width: 100%;
+            border: 1px solid $main-color;
+            background: $background-color;
+            color: $main-color;
+            margin-bottom: 10px;
+            padding: 10px 10px;
+            font-family: $main-font;
+            font-size: $paragraph-font-size;
+            text-transform: uppercase;
+        }
+
+        input[type=submit]:hover {
+            color: $background-color;
+            background: $main-color;
+        }
+
+        textarea {
+            margin-bottom: 10px;
+            width: 100%;
+            height: 200px;
+            background: $background-color;
+            resize: none;
+            border: 1px solid $main-color;
+            font-family: $main-font;
+            font-size: $paragraph-font-size;
+
+            &::placeholder {
+                color: $main-color;
+            }
+        }
     }
 }

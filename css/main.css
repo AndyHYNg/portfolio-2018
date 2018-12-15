@@ -496,9 +496,49 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 10px; }
+  .contact-email p {
+    margin: 0; }
 
 .contact-form {
   width: 100%; }
+  .contact-form input {
+    width: 100%;
+    border: 1px solid #bfbfbf;
+    background: #383838;
+    color: #bfbfbf;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    font-family: "Dosis", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .contact-form input[type=submit]:hover {
+    color: #383838;
+    background: #bfbfbf; }
+  .contact-form textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 200px;
+    background: #383838;
+    resize: none;
+    border: 1px solid #bfbfbf;
+    font-family: "Dosis", sans-serif;
+    font-size: 2rem; }
+    .contact-form textarea::-webkit-input-placeholder {
+      color: #bfbfbf; }
+    .contact-form textarea:-ms-input-placeholder {
+      color: #bfbfbf; }
+    .contact-form textarea::-ms-input-placeholder {
+      color: #bfbfbf; }
+    .contact-form textarea::placeholder {
+      color: #bfbfbf; }
+
+#footer p {
+  text-align: center; }
