@@ -4,6 +4,28 @@
         flex-wrap: wrap;
     }
 
+    &-field-container {
+        position: relative;
+
+        label {
+            font-size: $paragraph-font-size;
+            color: $main-color;
+            font-family: $main-font;
+            position: absolute;
+            top: 15px;
+            // transform: translateY(-50%);
+            left: 10px;
+            // z-index: -1;
+            transition: 0.2s;
+        }
+
+        input:focus + label,
+        textarea:focus + label {
+            top: 5px;
+            font-size: 1.6rem;
+        }
+    }
+
     &-email {
         width: 100%;
         border: 1px solid $main-color;
@@ -35,7 +57,7 @@
             background: $background-color;
             color: $main-color;
             margin-bottom: 10px;
-            padding: 10px;
+            padding: 25px 10px 10px 10px;
             font-family: $main-font;
             font-size: $paragraph-font-size;
         }
@@ -54,7 +76,7 @@
             border: 1px solid $main-color;
             font-family: $main-font;
             font-size: $paragraph-font-size;
-            padding: 10px;
+            padding: 25px 10px 10px 10px;
             vertical-align: top;
             color: $main-color;
 
