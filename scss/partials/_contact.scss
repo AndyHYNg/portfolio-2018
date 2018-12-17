@@ -70,7 +70,8 @@
 
     input[type="submit"]:hover {
       color: $background-color;
-      background: $main-color;
+      background: $project-highlight-background;
+      border: 1px solid $background-color;
     }
 
     textarea {

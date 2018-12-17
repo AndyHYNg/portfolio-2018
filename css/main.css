@@ -196,9 +196,9 @@ h3 {
   color: #bfbfbf; }
 
 h4 {
+  color: #fcce61;
   font-family: "Roboto", sans-serif;
-  font-size: 2.5rem;
-  color: #bfbfbf; }
+  font-size: 2.5rem; }
 
 h5 {
   font-family: "Dosis", sans-serif;
@@ -515,7 +515,7 @@ img {
 
 .flip:hover > h1 > span:nth-child(1):after,
 .flip:focus > h1 > span:nth-child(1):after {
-  background: #bfbfbf;
+  background: #fcce61;
   width: 100%;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
@@ -536,7 +536,7 @@ img {
 
 .flip:hover > h1 > span:nth-child(2):after,
 .flip:focus > h1 > span:nth-child(2):after {
-  background: #bfbfbf;
+  background: #fcce61;
   width: 100%;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
@@ -557,7 +557,7 @@ img {
 
 .flip:hover > h1 > span:nth-child(3):after,
 .flip:focus > h1 > span:nth-child(3):after {
-  background: #bfbfbf;
+  background: #fcce61;
   width: 100%;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
@@ -578,7 +578,7 @@ img {
 
 .flip:hover > h1 > span:nth-child(4):after,
 .flip:focus > h1 > span:nth-child(4):after {
-  background: #bfbfbf;
+  background: #fcce61;
   width: 100%;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
@@ -599,7 +599,7 @@ img {
 
 .flip:hover > h1 > span:nth-child(5):after,
 .flip:focus > h1 > span:nth-child(5):after {
-  background: #bfbfbf;
+  background: #fcce61;
   width: 100%;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
@@ -620,7 +620,7 @@ img {
 
 .flip:hover > h1 > span:nth-child(6):after,
 .flip:focus > h1 > span:nth-child(6):after {
-  background: #bfbfbf;
+  background: #fcce61;
   width: 100%;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
@@ -641,7 +641,7 @@ img {
 
 .flip:hover > h1 > span:nth-child(7):after,
 .flip:focus > h1 > span:nth-child(7):after {
-  background: #bfbfbf;
+  background: #fcce61;
   width: 100%;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
@@ -662,7 +662,7 @@ img {
 
 .flip:hover > h1 > span:nth-child(8):after,
 .flip:focus > h1 > span:nth-child(8):after {
-  background: #bfbfbf;
+  background: #fcce61;
   width: 100%;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
@@ -683,7 +683,7 @@ img {
 
 .flip:hover > h1 > span:nth-child(9):after,
 .flip:focus > h1 > span:nth-child(9):after {
-  background: #bfbfbf;
+  background: #fcce61;
   width: 100%;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
@@ -704,7 +704,7 @@ img {
 
 .flip:hover > h1 > span:nth-child(10):after,
 .flip:focus > h1 > span:nth-child(10):after {
-  background: #bfbfbf;
+  background: #fcce61;
   width: 100%;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
@@ -883,7 +883,8 @@ img {
     font-size: 2rem; }
   .contact-form input[type="submit"]:hover {
     color: #383838;
-    background: #bfbfbf; }
+    background: #fcce61;
+    border: 1px solid #383838; }
   .contact-form textarea {
     margin-bottom: 10px;
     width: 100%;
@@ -934,3 +935,7 @@ img {
           color: #fcce61; }
   #footer p {
     text-align: center; }
+
+@media (min-width: 333px) {
+  h1 {
+    font-size: 9rem; } }

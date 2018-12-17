@@ -254,7 +254,7 @@
   .flip:focus > h1 > span:nth-child(#{$i}):after {
     $first-delay: 100 * $i;
     $random: ($i * 9) - 30;
-    background: $main-color;
+    background: $project-highlight-background;
     width: 100%;
     transition: 0.6s;
     transition-delay: $first-delay + ms;
