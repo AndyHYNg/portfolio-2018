@@ -182,7 +182,6 @@ h1 {
 h2 {
   line-height: 1;
   font-family: "Dosis", sans-serif;
-  text-transform: uppercase;
   font-size: 4rem;
   margin: 0 0 30px 0; }
   h2::before {
@@ -251,7 +250,7 @@ img {
   .header-nav-button:after {
     opacity: 0;
     content: "×";
-    color: white;
+    color: #383838;
     position: absolute;
     top: 16px;
     left: -4px;
@@ -322,7 +321,9 @@ nav.header-main-nav {
     padding: 5px 20px; }
     nav.header-main-nav ul li a {
       width: 100%;
-      display: block; }
+      display: block;
+      text-decoration: none;
+      color: #383838; }
   nav.header-main-nav ul.menu {
     list-style-type: none;
     margin: 0;
@@ -769,13 +770,15 @@ nav.header-main-nav {
 .project-container {
   margin-bottom: 30px; }
   .project-container-text {
+    width: 95%;
+    margin: 0 auto;
     padding: 10px;
-    background: #878787;
     color: #bfbfbf; }
-    .project-container-text:hover {
-      background: #fcce61; }
-      .project-container-text:hover p, .project-container-text:hover h3 {
-        color: #383838; }
+  .project-container-img {
+    margin-bottom: 20px;
+    width: 95%;
+    -webkit-box-shadow: 1px 1px 0 #fcce61, 2px 2px 0 #fcce61, 3px 3px 0 #fcce61, 4px 4px 0 #fcce61, 5px 5px 0 #fcce61, 6px 6px 0 #fcce61, 7px 7px 0 #fcce61, 8px 8px 0 #fcce61;
+    box-shadow: 1px 1px 0 #fcce61, 2px 2px 0 #fcce61, 3px 3px 0 #fcce61, 4px 4px 0 #fcce61, 5px 5px 0 #fcce61, 6px 6px 0 #fcce61, 7px 7px 0 #fcce61, 8px 8px 0 #fcce61; }
 
 #skills ul {
   list-style-type: none;

@@ -2,16 +2,18 @@
     margin-bottom: 30px;
 
     &-text {
+        width: 95%;
+        margin: 0 auto;
         padding: 10px;
-        background: $project-text-background;
         color: $main-color;
+    }
 
-        &:hover {
-            background: $project-highlight-background;
-            
-            p, h3 {
-                color: $background-color;
-            }
-        }
+    &-img {
+        margin-bottom: 20px;
+        width: 95%;
+        box-shadow: 1px 1px 0 $project-highlight-background, 2px 2px 0 $project-highlight-background, 3px 3px 0 $project-highlight-background,
+        4px 4px 0 $project-highlight-background, 5px 5px 0 $project-highlight-background,
+        6px 6px 0 $project-highlight-background, 7px 7px 0 $project-highlight-background,
+        8px 8px 0 $project-highlight-background
     }
 }
