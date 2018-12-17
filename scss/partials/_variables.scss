@@ -1,9 +1,7 @@
 $background-color: #383838;
 $main-color: #bfbfbf;
 $project-highlight-background: #fcce61;
-
-$color-dark: darken($project-highlight-background, 10%);
-
+$darken-highlight: darken($project-highlight-background, 10%);
 $project-text-background: #878787;
 $main-font: 'Dosis', sans-serif;
 $sub-font: 'Roboto', sans-serif;
