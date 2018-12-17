@@ -1,4 +1,4 @@
-button {
+.header-nav-button {
   opacity: 0.6;
   background-color: transparent;
   position: fixed;
@@ -17,20 +17,23 @@ button {
     right: auto;
     width: 100%;
     background: linear-gradient(
-      to bottom, 
-      $project-highlight-background, $project-highlight-background 20%, 
-      transparent 20%, transparent 40%, 
-      $project-highlight-background 40%, $project-highlight-background 60%, 
-      transparent 60%, transparent 80%, 
-      $project-highlight-background 80%, $project-highlight-background 100%
+      to bottom,
+      $project-highlight-background,
+      $project-highlight-background 20%,
+      transparent 20%,
+      transparent 40%,
+      $project-highlight-background 40%,
+      $project-highlight-background 60%,
+      transparent 60%,
+      transparent 80%,
+      $project-highlight-background 80%,
+      $project-highlight-background 100%
     );
-    transition: opacity 0.2s ease-out,
-                width 0.2s 0.2s ease-out;
+    transition: opacity 0.2s ease-out, width 0.2s 0.2s ease-out;
   }
-
   &:after {
     opacity: 0;
-    content: '×';
+    content: "×";
     color: white;
     position: absolute;
     top: 16px;
@@ -40,15 +43,12 @@ button {
     line-height: 0;
     transition: opacity 0.4s ease-out;
   }
-
   &:active {
     transform: translateY(2px);
   }
-
   &:hover {
     opacity: 1;
   }
-
   .open & {
     opacity: 1;
     &:before {
@@ -57,25 +57,24 @@ button {
     }
     &:after {
       opacity: 1;
-      transform: translate3d(0,0,0)
-                 rotate(360deg);
-      transition: transform 0.4s 1s ease-out,
-                  opacity 0.4s 1s ease-out;
+      transform: translate3d(0, 0, 0) rotate(360deg);
+      transition: transform 0.4s 1s ease-out, opacity 0.4s 1s ease-out;
     }
   }
 }
-
-nav.main-nav {
+nav.header-main-nav {
   z-index: 1;
   position: fixed;
-  top: -100%; left: 0;
+  top: -100%;
+
+  left: 0;
   width: 100%;
   height: 100%;
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   overflow: hidden;
   &:before {
-    content: '';
+    content: "";
     @include position-center;
     background: rgba($color-dark, 0.98);
     width: 100%;
@@ -91,89 +90,94 @@ nav.main-nav {
       animation: menu-animation 0.8s ease-out forwards;
     }
   }
-}
-
-ul li {
+  ul li {
     font-size: $nav-links-font-size;
-}
+    font-family: $main-font;
+    padding: 5px 20px;
 
-ul.menu {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%,-50%,0);
-  backface-visibility: hidden;
-  perspective: 1000;
-  color: $background-color;
-  li {
-    opacity: 0;
-    text-align: center;
-    transform: translate3d(0,36px,0);
-    &:before {
-      content: '';
-      @include position-center;
-      left: auto;
-      background-color: $background-color;
-      height: 100%;
-      width: 0;
-      overflow: hidden;
-      transition: width 0.14s ease-out;
-    }
-    &:after {
-      opacity: 0;
-      content: attr(data-text);;
-      @include position-center;
-      color: $main-color;
-      overflow: hidden;
-      transform: translate(-24px, 6px);
-      transition: transform 0.1s ease-out,
-                  opacity 0.1s ease-out;
-    }
-    &:hover {
-      &:before {
-        left: 0;
-        right: auto;
+    a {
         width: 100%;
+        display: block;
+    }
+  }
+  ul.menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    // backface-visibility: hidden;
+    // perspective: 1000;
+    color: $background-color;
+    li {
+      opacity: 0;
+      text-align: center;
+      transform: translate3d(0, 36px, 0);
+      &:before {
+        content: "";
+        @include position-center;
+        left: auto;
+        background-color: $background-color;
+        height: 100%;
+        width: 0;
+        overflow: hidden;
+        transition: width 0.14s ease-out;
+        pointer-events: none;
       }
       &:after {
-        opacity: 1;
-        padding: 0 20px;
-        transform: translate(0px, 6px);
-        transition: transform 0.2s 0.14s ease-out,
-                    opacity 0.2s 0.14s ease-out;
+          pointer-events: none;
+        opacity: 0;
+        content: attr(data-text);
+        @include position-center;
+        color: $main-color;
+        overflow: hidden;
+        transform: translate(-24px, 6px);
+        transition: transform 0.1s ease-out, opacity 0.1s ease-out;
       }
-    }
-    .open & {
-      opacity: 1;
-      transform: translate3d(0,0,0);
-      transition: transform 0.2s ease-out,
-                  opacity 0.2s ease-out;
-      @for $i from 1 to 5 {
-        &:nth-child(#{$i}) { transition-delay: $i * 0.1s + 0.65s; }
+      &:hover {
+        &:before {
+          left: 0;
+          right: auto;
+          margin: auto;
+          width: 100%;
+        }
+        &:after {
+          opacity: 1;
+          padding: 0 20px;
+          transform: translate(0px, 6px);
+          transition: transform 0.2s 0.14s ease-out, opacity 0.2s 0.14s ease-out;
+        }
+      }
+      .open & {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+        @for $i from 1 to 5 {
+          &:nth-child(#{$i}) {
+            transition-delay: $i * 0.1s + 0.65s;
+          }
+        }
       }
     }
   }
-} 
-
+}
 @keyframes menu-animation {
   0% {
     opacity: 0;
-    transform: scale(0.04)
-               translateY(300%);
+    transform: scale(0.04) translateY(300%);
   }
   40% {
-    transform: scale(0.04)
-               translateY(0);
+    transform: scale(0.04) translateY(0);
     transition: ease-out;
   }
   40% {
-    transform: scale(0.04)
-               translateY(0);
+    transform: scale(0.04) translateY(0);
   }
   60% {
     opacity: 1;
-    transform: scale(0.02)
-               translateY(0px);
+    transform: scale(0.02) translateY(0px);
   }
   61% {
     transform: scale(0.04);
@@ -190,73 +194,66 @@ ul.menu {
     border-radius: 0;
   }
 }
-
 .header-nav {
-    i {
-        font-size: 2rem;
-    }
+  i {
+    font-size: 2rem;
+  }
 }
-
 .header-fixed-container {
-    position: fixed;
-    height: 15vh;
-    background: $background-color;
-    z-index: 100;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 3px solid $main-color;
-}
+  position: fixed;
+  height: 15vh;
+  background: $background-color;
 
+  z-index: 100;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid $main-color;
+}
 .header-logo {
-    width: 50%;
-
-    h2 {
-        margin: 0;
-    }
-}
-
-.header-fixed-nav {
-    display: none;
-}
-
-.header-fixed-nav ul {
+  width: 50%;
+  h2 {
     margin: 0;
-    padding: 0;
-    display: flex;
-    width: 50%;
+  }
+}
+.header-fixed-nav {
+  display: none;
+}
+.header-fixed-nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 50%;
 }
 
 .header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-top: 0;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
+  margin-top: 0;
+}
 .header-left-container {
-    margin-top: 15vh;
+  margin-top: 15vh;
 }
-
 .header span {
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
 
-    display: inline-block;
-      position: relative;
-      margin-right: 5px;
-      &:after {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 0;
-        top: 0;
-        left: 0;
-        transition: 0.6s;
-        z-index: -5;
-      }
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    z-index: -5;
+  }
 }
-
 @for $i from 1 through 10 {
   .flip:hover > h1 > span:nth-child(#{$i}):after,
   .flip:focus > h1 > span:nth-child(#{$i}):after {
@@ -268,9 +265,8 @@ ul.menu {
     transition-delay: $first-delay + ms;
     transform: rotate($random + deg);
   }
-  .flip:hover> h1 > span:nth-child(#{$i}),
-  .flip:focus> h1 > span:nth-child(#{$i})
-  {
+  .flip:hover > h1 > span:nth-child(#{$i}),
+  .flip:focus > h1 > span:nth-child(#{$i}) {
     $second-delay: 110 * $i;
     color: $background-color;
     transition-delay: $second-delay + ms;
