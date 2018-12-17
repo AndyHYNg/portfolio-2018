@@ -10,14 +10,28 @@
     />
     <link
       rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
     <title>Andy Ng</title>
   </head>
-
   <body>
     <header class="header">
+      <button></button>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li data-text="Home">Home</li>
+          <li data-text="About">About</li>
+          <li data-text="Projects">Projects</li>
+          <li data-text="Contact">Contact</li>
+        </ul>
+      </nav>
       <div class="wrapper header-container">
         <!--
           <div class="header-right-container">
@@ -61,13 +75,17 @@
           <img src="https://www.placecage.com/c/500/324/" />
         </div>
         <div class="project-container-text">
-          <h3>Project 1</h3>
+          <h3>Radflix</h3>
+          <p class="project-container-text--center">
+            React | Firebase | Authentication | RESTful API | JavaScript | Group
+            Project
+          </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum
-            neque architecto perspiciatis cumque totam vitae corrupti odio
-            debitis delectus culpa enim saepe, a illum. Omnis, voluptas, a
-            veniam sunt, obcaecati doloribus nobis numquam ut sed modi aut
-            culpa! Sequi?
+            Radflix is a web application that allows friends and families to
+            share their top movie picks. Users can sign-in and search for movie
+            details displayed by The Movie Database API and append their top
+            movie picks in private groups. The web app also features guest
+            sign-in to collaborate with other guests on their top movie picks.
           </p>
         </div>
       </div>
@@ -76,13 +94,16 @@
           <img src="https://www.placecage.com/c/500/324/" />
         </div>
         <div class="project-container-text">
-          <h3>Project 2</h3>
+          <h3>Bar Wizard</h3>
+          <p class="project-container-text--center">
+            React | Firebase | Authentication | RESTful API | JavaScript
+          </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum
-            neque architecto perspiciatis cumque totam vitae corrupti odio
-            debitis delectus culpa enim saepe, a illum. Omnis, voluptas, a
-            veniam sunt, obcaecati doloribus nobis numquam ut sed modi aut
-            culpa! Sequi?
+            Bar Wizard is a cocktail lookup web app that utilizes TheCocktailDB
+            API to display search results by the user. Users can also save
+            cocktail details to their account for future reference. The app
+            includes a bottom navigation in mobile layout to deliver the best
+            user experience.
           </p>
         </div>
       </div>
@@ -91,13 +112,14 @@
           <img src="https://www.placecage.com/c/500/324/" />
         </div>
         <div class="project-container-text">
-          <h3>Project 3</h3>
+          <h3>Revelio</h3>
+          <p class="project-container-text--center">
+            RESTful API | JavaScript | jQuery | Pair Programming
+          </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum
-            neque architecto perspiciatis cumque totam vitae corrupti odio
-            debitis delectus culpa enim saepe, a illum. Omnis, voluptas, a
-            veniam sunt, obcaecati doloribus nobis numquam ut sed modi aut
-            culpa! Sequi?
+            What's it like to have a social media site in the wizarding world of
+            Hogwarts? Revelio will reveal all you need for your favourite Harry
+            Potter characters.
           </p>
         </div>
       </div>
@@ -106,13 +128,13 @@
           <img src="https://www.placecage.com/c/500/324/" />
         </div>
         <div class="project-container-text">
-          <h3>Project 4</h3>
+          <h3>Willow</h3>
+          <p class="project-container-text--center">
+            Responsive Web Development | HTML5 | CSS3 | SCSS | PSD Conversion
+          </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum
-            neque architecto perspiciatis cumque totam vitae corrupti odio
-            debitis delectus culpa enim saepe, a illum. Omnis, voluptas, a
-            veniam sunt, obcaecati doloribus nobis numquam ut sed modi aut
-            culpa! Sequi?
+            Multipage personal blog website, fully responsive across all devices
+            with subtle and effective micro-interactions.
           </p>
         </div>
       </div>
@@ -150,33 +172,28 @@
           method="POST"
         >
           <div class="contact-field-container">
-              <input
-                id="name"
-                type="text"
-                name="name"
-                required
-              />
+            <input id="name" type="text" name="name" required />
             <label for="name">Name</label>
           </div>
           <div class="contact-field-container">
-              <input
-                id="email"
-                type="email"
-                name="email"
-                type="emailAddress"
-                required
-              />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              type="emailAddress"
+              required
+            />
             <label for="email">Email</label>
           </div>
           <div class="contact-field-container">
-              <textarea
-                id="message"
-                name="message"
-                required
-                cols="40"
-                rows="5"
-                autocomplete="off"
-              ></textarea>
+            <textarea
+              id="message"
+              name="message"
+              required
+              cols="40"
+              rows="5"
+              autocomplete="off"
+            ></textarea>
             <label for="message">Message</label>
           </div>
           <input type="submit" value="SEND" />

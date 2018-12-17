@@ -1,7 +1,10 @@
 $background-color: #383838;
 $main-color: #bfbfbf;
-$project-text-background: #878787;
 $project-highlight-background: #fcce61;
+
+$color-dark: darken($project-highlight-background, 10%);
+
+$project-text-background: #878787;
 $main-font: 'Dosis', sans-serif;
 $sub-font: 'Roboto', sans-serif;
 $logo-font: 'Norican', cursive;
@@ -12,3 +15,4 @@ $h4-heading-font-size: 2.5rem;
 $h5-heading-font-size: 2rem;
 $paragraph-font-size: 2rem;
 $skills-logo-size: 6rem;
+$nav-links-font-size: 4rem;
