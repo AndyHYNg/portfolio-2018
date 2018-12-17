@@ -779,6 +779,9 @@ nav.header-main-nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .project-container h3 {
+    font-weight: 700;
+    font-size: 3rem; }
   .project-container-links {
     margin: 20px 0; }
     .project-container-links a {
@@ -797,14 +800,22 @@ nav.header-main-nav {
     margin: 0 auto;
     color: #bfbfbf; }
     .project-container-text--center {
-      text-align: center; }
+      text-align: center;
+      font-weight: 700; }
     .project-container-text p {
       line-height: 1.6; }
   .project-container-img {
     margin-bottom: 20px;
     width: 95%;
+    border: 1px solid #fcce61;
     -webkit-box-shadow: 1px 1px 0 #fcce61, 2px 2px 0 #fcce61, 3px 3px 0 #fcce61, 4px 4px 0 #fcce61, 5px 5px 0 #fcce61, 6px 6px 0 #fcce61, 7px 7px 0 #fcce61, 8px 8px 0 #fcce61;
     box-shadow: 1px 1px 0 #fcce61, 2px 2px 0 #fcce61, 3px 3px 0 #fcce61, 4px 4px 0 #fcce61, 5px 5px 0 #fcce61, 6px 6px 0 #fcce61, 7px 7px 0 #fcce61, 8px 8px 0 #fcce61; }
+    .project-container-img img {
+      -webkit-filter: grayscale(100%) brightness(120%);
+      filter: grayscale(100%) brightness(120%); }
+      .project-container-img img:hover, .project-container-img img:focus {
+        -webkit-filter: none;
+        filter: none; }
 
 #skills ul {
   list-style-type: none;
