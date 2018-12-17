@@ -763,6 +763,10 @@ nav.header-main-nav {
 #about p {
   line-height: 1.6; }
 
+#about .img-container {
+  -webkit-filter: drop-shadow(1px 1px 0 #fcce61) drop-shadow(2px 2px 0 #fcce61) drop-shadow(3px 3px 0 #fcce61) drop-shadow(4px 4px 0 #fcce61);
+  filter: drop-shadow(1px 1px 0 #fcce61) drop-shadow(2px 2px 0 #fcce61) drop-shadow(3px 3px 0 #fcce61) drop-shadow(4px 4px 0 #fcce61); }
+
 #about img {
   -webkit-clip-path: polygon(15% 0, 85% 0, 85% 60%, 100% 60%, 100% 100%, 0 100%, 0 15%, 15% 15%);
   clip-path: polygon(15% 0, 85% 0, 85% 60%, 100% 60%, 100% 100%, 0 100%, 0 15%, 15% 15%); }
@@ -902,16 +906,19 @@ nav.header-main-nav {
 
 .contact-form {
   width: 100%; }
+  .contact-form-field {
+    padding: 25px 10px 10px 10px; }
+  .contact-form-submit {
+    padding: 10px; }
   .contact-form input {
     width: 100%;
     border: 1px solid #bfbfbf;
     background: #383838;
     color: #bfbfbf;
     margin-bottom: 10px;
-    padding: 25px 10px 10px 10px;
     font-family: "Dosis", sans-serif;
     font-size: 2rem; }
-  .contact-form input[type=submit]:hover {
+  .contact-form input[type="submit"]:hover {
     color: #383838;
     background: #bfbfbf; }
   .contact-form textarea {
