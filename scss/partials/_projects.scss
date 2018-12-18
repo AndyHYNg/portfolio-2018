@@ -46,9 +46,9 @@
             font-weight: 700;
         }
 
-        p {
-            line-height: 1.6;
-        }
+        // p {
+        //     line-height: 1.6;
+        // }
     }
 
     &-img {
@@ -63,7 +63,8 @@
         img {
             filter: grayscale(100%) brightness(120%);
             &:hover,
-            &:focus {
+            &:focus,
+            &.hovered {
                 filter: none;
             }
         }
