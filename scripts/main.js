@@ -1,9 +1,13 @@
 const revealSection = () => {
     ScrollReveal().reveal('#about', { reset: true, delay: 50 });
-    ScrollReveal().reveal("#projects", { reset: true, delay: 50 });
     ScrollReveal().reveal(".project-container", { reset: true, delay: 50 });
     ScrollReveal().reveal("#skills", { reset: true, delay: 50 });
     ScrollReveal().reveal("#contact", { reset: true, delay: 50 });
+}
+
+const smoothScroll = () => {
+    $(".main-nav-anchors").smoothScroll({speed: 500});
+    $(".down-arrow").smoothScroll({ speed: 500 });
 }
 
 const mainNavToggles = () => {
@@ -19,27 +23,9 @@ const mainNavToggles = () => {
 const init = () => {
     revealSection();
     mainNavToggles();
+    smoothScroll();
 }
 
 $(function() {
     init();
 })
-
-// $(function() {
-//     if (isScrolledIntoView(document.getElementsByClassName('.project-container-img'))) {
-//         console.log('hi');
-//         $('.project-container-img img').toggleClass('hovered');
-//     }
-// })
-
-// function isScrolledIntoView(el) {
-//   var rect = el.getBoundingClientRect();
-//   var elemTop = rect.top;
-//   var elemBottom = rect.bottom;
-
-//   // Only completely visible elements return true:
-//   var isVisible = elemTop >= 0 && elemBottom <= window.innerHeight;
-//   // Partially visible elements return true:
-//   //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
-//   return isVisible;
-// }

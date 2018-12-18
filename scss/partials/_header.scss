@@ -1,5 +1,33 @@
 .header {
 
+    &-logo {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+
+        h2 {
+            border: none;
+            line-height: 0.7;
+        }
+    }
+
+    &-down-arrow {
+        font-size: 3rem;
+        position: absolute; 
+        top: 90vh;
+        left: 50%;
+        transform: translateX(-50%);
+
+        a {
+            color: $main-color;
+            
+            &:hover {
+                color: $project-highlight-background;
+            }
+        }
+
+    }
+
   &-nav-button {
     opacity: 0.6;
     background-color: transparent;
