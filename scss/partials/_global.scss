@@ -8,6 +8,8 @@ body {
 }
 
 .wrapper {
+        max-width: 1600px;
+    min-width: 320px;
     width: 85vw;
     // padding-left: 20px;
     // padding-right: 20px;
@@ -20,6 +22,7 @@ h1, h2 {
 }
 
 h1 {
+    width: 230px;
     line-height: 1;
     font-family: $main-font;
     text-transform: uppercase;
