@@ -34,6 +34,10 @@
 }
 
 @media (min-width: 768px) {
+
+    .header nav.header-main-nav ul li {
+        font-size: 6rem;
+    }
     h1 {
         font-size: 10rem;
     }
@@ -45,8 +49,14 @@
 
 @media (min-width: 930px) {
 
-    p {
-        font-size: 2.3rem;
+    // p {
+    //     font-size: 2.3rem;
+    // }
+
+    #about {
+        .img-container {
+            width: calc(100% / 3);
+        }
     }
 
     .about-container {
@@ -55,10 +65,6 @@
 
         h4 {
             margin-top: 0;
-        }
-
-        .img-container {
-            width: 15%;
         }
 
         .about-text {
