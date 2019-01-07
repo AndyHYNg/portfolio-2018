@@ -2,23 +2,16 @@ html {
   font-size: 62.5%;
 }
 
-// html.sr .load-hidden {
-//     visibility: hidden;
-// }
-
 body {
   background: $background-color;
-//   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
   max-width: 1600px;
   min-width: 320px;
   width: 85vw;
-  // padding-left: 20px;
-  // padding-right: 20px;
   margin: 30px auto;
-  // padding: 30px 0;
 }
 
 h1,
@@ -41,7 +34,6 @@ h2 {
   border-bottom: 5px solid $main-color;
   line-height: 1;
   font-family: $main-font;
-  // text-transform: uppercase;
   font-size: $sub-heading-font-size;
   margin: 0 0 30px 0;
 
