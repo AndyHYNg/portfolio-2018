@@ -278,8 +278,9 @@
 }
 
 @for $i from 1 through 10 {
-  .flip:hover > h1 > span:nth-child(#{$i}):after,
-  .flip:focus > h1 > span:nth-child(#{$i}):after {
+  // .flip:hover > h1 > span:nth-child(#{$i}):after,
+  // .flip:focus > h1 > span:nth-child(#{$i}):after {
+  .flip > h1 > span:nth-child(#{$i}):after {
     $first-delay: 100 * $i;
     $random: ($i * 9) - 30;
     background: $project-highlight-background;
@@ -288,8 +289,9 @@
     transition-delay: $first-delay + ms;
     transform: rotate($random + deg);
   }
-  .flip:hover > h1 > span:nth-child(#{$i}),
-  .flip:focus > h1 > span:nth-child(#{$i}) {
+  // .flip:hover > h1 > span:nth-child(#{$i}),
+  // .flip:focus > h1 > span:nth-child(#{$i}) {
+  .flip > h1 > span:nth-child(#{$i}) {
     $second-delay: 110 * $i;
     color: $background-color;
     transition-delay: $second-delay + ms;

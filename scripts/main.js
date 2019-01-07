@@ -28,9 +28,14 @@ const mainNavToggles = () => {
     })
 }
 
+// const triggerFocus = () => {
+//     $('.flip').trigger("focus");
+// }
+
 const init = () => {
     revealSection();
     mainNavToggles();
+    // triggerFocus();
     // smoothScroll();
 }
 
